@@ -1,0 +1,90 @@
+baseURL = "/"
+title = "Jason Zhang's blog"
+disqusShortname = "jasonzhang95"
+copyright = "Copyright (c) 2018, Jason Zhang; all rights reserved"
+
+builddrafts                = false
+languageCode               = "zn-Hans"
+canonifyurls               = true
+contentdir                 = "content"
+layoutdir                  = "layouts"
+publishdir                 = "public"
+enableEmoji                = true
+hasCJKLanguage             = true
+summaryLength              = 200
+Paginate = 3
+
+pygmentsuseclasses         = true
+
+
+[author]
+    name = "Zhen Zhang"
+
+[indexes]
+    tag = "tags"
+    topic = "topics"
+
+
+[permalinks]
+  blog                     = "blog/:year-:month/:slug/"
+
+
+[taxonomies]
+  tag                      = "tags"
+  series                   = "series"
+  category                 = "categories"
+
+
+[menu]
+  [[menu.main]]
+    name                   = "终南"
+    weight                 = -120
+    identifier             = "blog"
+    url                    = "终南/"  
+
+  [[menu.main]]
+    name                   = "沧海"
+    weight                 = -110
+    identifier             = "moment"
+    url                    = "沧海/" 
+
+  [[menu.main]]
+    name                   = "关于"
+    weight                 = -100
+    identifier             = "about"
+    url                    = "关于/" 
+
+[params]
+  faviconfile              = "img/zheng.png"               # from static/
+  avatar                   = "img/profile.jpg"             # path to image in static dir e.g img/avatar.png 
+  author                   = "Jason Zhang"
+  description              = ["Be myself.", "Love the wonderful world.", "Do the right things and be a better man."]           # appears in the site header when set to a non-empty string
+  welcome_head             = "Hello, World!"
+  welcome_word             = "~ No Day But Today ~"
+
+  latestpostscount         = 5                             # how many posts to display on the home page
+  bloggroupby              = 'month'
+  dateform                 = "Jan 2, 2006"
+  dateformfull             = "2006-01-02  Monday  15:04:05"
+  noshowreadtime           = false                         # if true, don't show "<x> minutes read" in posts
+
+  # slides
+  slidesDirPath            = "themes/AllinOne/static/img/header-slides"    # path to image in local dir (path for hugo)
+  slidesDirPathURL         = "img/header-slides"    # path to image in static dir (for static pages)
+
+  # highlighting 
+  highlightjs              = true
+
+  # latex
+  katex                    = true
+
+  # links
+  email                    = "bestzed9595@gmail.com"
+  github                   = "//github.com/JasonZhang95"
+  linkedin                 = "//linkedin.com/in/you"
+  instagram                = "//instagram.com/you"
+  include_rss              = true                          # include RSS <link> tag in <head> and show RSS icon
+  
+  # analytics
+  googleAnalytics          = "your-google-analytic-id"
+
